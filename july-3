@@ -1,0 +1,18 @@
+PS1="What can I do for you? (You're in %~) "
+
+alias profile="mi .zshrc"
+alias open="open -a"
+alias mi="micro"
+alias py="python3"
+alias copy="cp -i"
+alias move="mv -i"
+alias ls="ls -F"
+
+alias sublime="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Sublime"
+alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
+alias blot="cd ~/Dropbox/Apps/Blot/Posts && ls"
+
+function search {
+	local term="$1"
+	grep -r "$term" ~/Dropbox/Apps/Blot/Posts
+}
